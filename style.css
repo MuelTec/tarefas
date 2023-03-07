@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background: #000;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -33,10 +33,11 @@ body {
     color: #FFF;
 }
 
-topo button {
+.topo button {
     width: 45px;
     border-radius: 12px;
     border: 1px solid #191818;
+    background: #191818;
     color: #FFF;
     outline: none;
 }
@@ -47,7 +48,7 @@ topo button {
 }
 
 #listaTarefas {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -59,6 +60,7 @@ topo button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top:  15px;
 }
 
 .btnAcao {
@@ -70,6 +72,7 @@ topo button {
     cursor: pointer;
     background: #2b2a2a;
     color: #FFF;
+    outline: none;
 }
 
 .btnAcao:hover {

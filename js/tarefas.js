@@ -43,10 +43,12 @@ function criarTagLI(tarefa) {
    let btnEditar = document.createElement('button');
     btnEditar.classList.add('btnAcao');
     btnEditar.innerHTML = '<i class="fa fa-pencil"></i>';
+    btnEditar.setAttribute('onclick', 'editar('+tarefa.id+')');
 
    let btnExcluir = document.createElement('button');
-   btnExcluir.classList.add('btnExcluir');
+   btnExcluir.classList.add('btnAcao');
    btnExcluir.innerHTML = '<i class="fa fa-trash"></i>';
+   btnExcluir.setAttribute('onclick', 'excluir('+tarefa.id+')');
 
    div.appendChild(btnEditar);
    div.appendChild(btnExcluir);
@@ -54,4 +56,12 @@ function criarTagLI(tarefa) {
    li.appendChild(span);
    li.appendChild(div);
    return li;
+}
+
+function editar(idTarefa) {
+    alert(idTarefa);
+}
+
+function excluir(idTarefa) {
+    alert(idTarefa);
 }
